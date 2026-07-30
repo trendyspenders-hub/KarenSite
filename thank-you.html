@@ -19,13 +19,20 @@
   <meta name="twitter:title" content="Thank You | Alcantara Safety Solutions">
   <meta name="twitter:description" content="We've received your message. Karen Alcantara personally reviews every request and replies within one business day.">
   <meta name="twitter:image" content="https://www.alcantarasafety.com/images/og-default.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/vendor/phosphor/regular.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alcantarasafety.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Thank You", "item": "https://www.alcantarasafety.com/thank-you.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -107,6 +114,12 @@
   <main id="main-content">
     <section class="page-header">
       <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Thank You</span></li>
+          </ol>
+        </nav>
         <h1>Thank You — Message <em>Received</em></h1>
         <p class="page-desc">Your request is in Karen's inbox. Here's exactly what happens next.</p>
       </div>
