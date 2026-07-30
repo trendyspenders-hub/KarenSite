@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.alcantarasafety.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://www.alcantarasafety.com/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.alcantarasafety.com/services/safety-plan-creation.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.alcantarasafety.com/services/compliance-consulting.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.alcantarasafety.com/services/risk-assessments.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.alcantarasafety.com/safety-plan-creation.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.alcantarasafety.com/compliance-consulting.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.alcantarasafety.com/risk-assessments.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.alcantarasafety.com/industries.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/construction.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/manufacturing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/warehousing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/healthcare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/transportation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/food-processing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/oil-gas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/electrical.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/landscaping.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/janitorial.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/offices.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/property-management.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/municipal.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/industries/retail-hospitality.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/construction.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/manufacturing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/warehousing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/healthcare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/transportation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/food-processing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/oil-gas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/electrical.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/landscaping.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/janitorial.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/offices.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/property-management.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/municipal.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/retail-hospitality.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alcantarasafety.com/about.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.alcantarasafety.com/case-studies.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.alcantarasafety.com/resources.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alcantarasafety.com/resources/osha-compliance-checklist.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alcantarasafety.com/resources/worksafebc-health-safety-program-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/osha-compliance-checklist.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/worksafebc-health-safety-program-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alcantarasafety.com/inspection-readiness-quiz.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alcantarasafety.com/ask-an-expert.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alcantarasafety.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
@@ -38,13 +38,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/resources/safety-plan-cost-guide.html</loc>
+    <loc>https://www.alcantarasafety.com/safety-plan-cost-guide.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/resources/osha-vs-worksafebc.html</loc>
+    <loc>https://www.alcantarasafety.com/osha-vs-worksafebc.html</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -56,97 +56,97 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/vancouver.html</loc>
+    <loc>https://www.alcantarasafety.com/vancouver.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/burnaby.html</loc>
+    <loc>https://www.alcantarasafety.com/burnaby.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/surrey.html</loc>
+    <loc>https://www.alcantarasafety.com/surrey.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/richmond.html</loc>
+    <loc>https://www.alcantarasafety.com/richmond.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/coquitlam.html</loc>
+    <loc>https://www.alcantarasafety.com/coquitlam.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/langley.html</loc>
+    <loc>https://www.alcantarasafety.com/langley.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/abbotsford.html</loc>
+    <loc>https://www.alcantarasafety.com/abbotsford.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/north-vancouver.html</loc>
+    <loc>https://www.alcantarasafety.com/north-vancouver.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/victoria.html</loc>
+    <loc>https://www.alcantarasafety.com/victoria.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/nanaimo.html</loc>
+    <loc>https://www.alcantarasafety.com/nanaimo.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/courtenay.html</loc>
+    <loc>https://www.alcantarasafety.com/courtenay.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/campbell-river.html</loc>
+    <loc>https://www.alcantarasafety.com/campbell-river.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/kelowna.html</loc>
+    <loc>https://www.alcantarasafety.com/kelowna.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/kamloops.html</loc>
+    <loc>https://www.alcantarasafety.com/kamloops.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/prince-george.html</loc>
+    <loc>https://www.alcantarasafety.com/prince-george.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.alcantarasafety.com/service-areas/fort-st-john.html</loc>
+    <loc>https://www.alcantarasafety.com/fort-st-john.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
