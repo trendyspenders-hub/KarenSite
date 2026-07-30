@@ -64,6 +64,22 @@ Each industry page covers that sector's top hazards, the regulations inspectors 
 - [OSHA vs. WorkSafeBC](https://www.alcantarasafety.com/resources/osha-vs-worksafebc.html): cross-border compliance comparison
 - [FAQ](https://www.alcantarasafety.com/faq.html): services, pricing, timelines, coverage questions answered
 - [Service Areas](https://www.alcantarasafety.com/service-areas.html): British Columbia communities served — Lower Mainland, Vancouver Island, Interior & North
+- [Vancouver](https://www.alcantarasafety.com/service-areas/vancouver.html): Safety plans for Vancouver employers — construction, film, port logistics, hospitality, offices
+- [Burnaby](https://www.alcantarasafety.com/service-areas/burnaby.html): Safety plans for Burnaby — Big Bend food production, light industrial, high-rise construction
+- [Surrey](https://www.alcantarasafety.com/service-areas/surrey.html): Safety plans for Surrey — construction, trucking & logistics, manufacturing, agri-food, COR readiness
+- [Richmond](https://www.alcantarasafety.com/service-areas/richmond.html): Safety plans for Richmond — food processing, YVR logistics, warehousing, manufacturing
+- [Coquitlam](https://www.alcantarasafety.com/service-areas/coquitlam.html): Safety plans for Coquitlam & Tri-Cities — construction, trades, municipal, cleantech
+- [Langley](https://www.alcantarasafety.com/service-areas/langley.html): Safety plans for Langley — manufacturing, Hwy 1 distribution, agriculture & equine
+- [Abbotsford](https://www.alcantarasafety.com/service-areas/abbotsford.html): Safety plans for Abbotsford — agriculture, food processing, trucking, construction
+- [North & West Vancouver](https://www.alcantarasafety.com/service-areas/north-vancouver.html): Safety plans for the North Shore — marine & shipbuilding, film, steep-slope construction
+- [Victoria](https://www.alcantarasafety.com/service-areas/victoria.html): Safety plans for Victoria — hospitality, healthcare, marine, government contractors, heritage renovation
+- [Nanaimo](https://www.alcantarasafety.com/service-areas/nanaimo.html): Safety plans for Nanaimo — healthcare, construction, retail, marine & port
+- [Courtenay & Comox Valley](https://www.alcantarasafety.com/service-areas/courtenay.html): Safety plans for the Comox Valley — construction, aquaculture, food & beverage, tourism
+- [Campbell River](https://www.alcantarasafety.com/service-areas/campbell-river.html): Safety plans for Campbell River — aquaculture, forestry, construction, tourism
+- [Kelowna](https://www.alcantarasafety.com/service-areas/kelowna.html): Safety plans for Kelowna — construction, wineries, agriculture, hospitality (remote-first)
+- [Kamloops](https://www.alcantarasafety.com/service-areas/kamloops.html): Safety plans for Kamloops — trucking & logistics, mining services, construction, healthcare (remote-first)
+- [Prince George](https://www.alcantarasafety.com/service-areas/prince-george.html): Safety plans for Prince George — forestry, trucking, oil & gas services (remote-first)
+- [Fort St. John](https://www.alcantarasafety.com/service-areas/fort-st-john.html): Safety plans for Fort St. John & Peace Region — oil & gas contractors, energy services (remote-first)
 - Resources & guides: https://www.alcantarasafety.com/resources.html
 - Contact / free consultation: https://www.alcantarasafety.com/contact.html
 - Instant quote estimate: https://www.alcantarasafety.com/get-quote.html
