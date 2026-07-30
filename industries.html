@@ -50,9 +50,9 @@
             <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Services <i class="ph ph-caret-down" aria-hidden="true"></i></button>
             <ul class="dropdown-menu">
               <li><a href="services.html">All Services</a></li>
-              <li><a href="services/safety-plan-creation.html">Safety Plan Creation</a></li>
-              <li><a href="services/compliance-consulting.html">Compliance Consulting</a></li>
-              <li><a href="services/risk-assessments.html">Risk Assessments</a></li>
+              <li><a href="services/safety-plan-creation.html">Custom Safety Plans</a></li>
+              <li><a href="services/compliance-consulting.html">Compliance Reviews</a></li>
+              <li><a href="services/risk-assessments.html">Hazard &amp; Risk Assessments</a></li>
             </ul>
           </li>
           <li class="nav-item-dropdown">
@@ -97,43 +97,77 @@
 
     <section class="section">
       <div class="container">
-        <div class="grid grid-3 industries-grid">
-          <article class="card fade-in">
-            <span class="card-icon"><i class="ph ph-hard-hat" aria-hidden="true"></i></span>
-            <h2 style="font-size:22px;">Construction</h2>
-            <p>Falls, struck-by hazards, and multi-employer sites demand tight coordination and documentation that holds up to scrutiny.</p>
-            <a href="industries/construction.html" class="learn-more">Construction Safety <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-          </article>
-          <article class="card fade-in">
-            <span class="card-icon navy"><i class="ph ph-factory" aria-hidden="true"></i></span>
-            <h2 style="font-size:22px;">Manufacturing</h2>
-            <p>Machine guarding, lockout/tagout, and chemical exposure — the hazards that cause the most severe injuries on the floor.</p>
-            <a href="industries/manufacturing.html" class="learn-more">Manufacturing Safety <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-          </article>
-          <article class="card fade-in">
-            <span class="card-icon green"><i class="ph ph-warehouse" aria-hidden="true"></i></span>
-            <h2 style="font-size:22px;">Warehousing</h2>
-            <p>Forklifts, racking, and repetitive strain in high-throughput environments where speed pressure is constant.</p>
-            <a href="industries/warehousing.html" class="learn-more">Warehousing Safety <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-          </article>
-          <article class="card fade-in">
-            <span class="card-icon"><i class="ph ph-first-aid-kit" aria-hidden="true"></i></span>
-            <h2 style="font-size:22px;">Healthcare</h2>
-            <p>Needle sticks, patient handling, workplace violence, and biological exposure in clinical and care settings.</p>
-            <a href="industries/healthcare.html" class="learn-more">Healthcare Safety <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-          </article>
-          <article class="card fade-in">
-            <span class="card-icon navy"><i class="ph ph-fork-knife" aria-hidden="true"></i></span>
-            <h2 style="font-size:22px;">Food Service</h2>
-            <p>Burns, cuts, slips, and chemical hazards in fast-paced kitchens — plus the training turnover challenge.</p>
-            <a href="contact.html" class="learn-more">Ask About Food Service <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-          </article>
-          <article class="card fade-in">
-            <span class="card-icon green"><i class="ph ph-gas-pump" aria-hidden="true"></i></span>
-            <h2 style="font-size:22px;">Oil &amp; Gas / Logistics</h2>
-            <p>High-consequence hazards: confined spaces, H2S, driving, and contractor management across remote sites.</p>
-            <a href="contact.html" class="learn-more">Ask About Oil &amp; Gas <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-          </article>
+        <div class="grid industries-grid-v2">
+          <a href="industries/construction.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-construction"><i class="ph ph-hard-hat" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Construction</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Falls, struck-by hazards, multi-employer sites, prime contractor liability.</span>
+          </a>
+          <a href="industries/manufacturing.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-manufacturing"><i class="ph ph-factory" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Manufacturing</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Machine guarding, lockout/tagout, chemical exposure, noise.</span>
+          </a>
+          <a href="industries/warehousing.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-warehousing"><i class="ph ph-warehouse" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Warehousing</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Forklifts, racking, docks, and quota-driven tempo pressure.</span>
+          </a>
+          <a href="industries/healthcare.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-healthcare"><i class="ph ph-first-aid-kit" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Healthcare</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Patient handling, violence prevention, sharps, biological exposure.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-logistics"><i class="ph ph-truck" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Transportation &amp; Logistics</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Driving incidents, fatigue, load securement, yard safety.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-food"><i class="ph ph-fork-knife" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Food Processing &amp; Service</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Burns, cuts, slips, chemicals — and high-turnover training.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-oilgas"><i class="ph ph-gas-pump" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Oil &amp; Gas</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Confined spaces, H2S, contractor management, remote sites.</span>
+          </a>
+          <a href="industries/construction.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-electrical"><i class="ph ph-lightning" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Electrical Contractors</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Arc flash, live work, lockout, and field documentation.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-landscape"><i class="ph ph-tree" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Landscaping</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Equipment, heat stress, pesticides, and seasonal crews.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-janitorial"><i class="ph ph-broom" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Janitorial Services</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Chemical exposure, slips, lone work, client-site hazards.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-office"><i class="ph ph-buildings" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Commercial Offices</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Ergonomics, emergency plans, and joint committee support.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-property"><i class="ph ph-house-line" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Property Management</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Contractor coordination, asbestos, common-area safety.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-municipal"><i class="ph ph-city" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Municipal Services</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Public works, traffic control, and multi-department programs.</span>
+          </a>
+          <a href="industries.html" class="industry-img-card fade-in" style="flex-direction:column;align-items:flex-start;gap:10px;padding:22px;">
+            <span class="industry-thumb thumb-retail"><i class="ph ph-storefront" aria-hidden="true"></i></span>
+            <span style="font-size:18px;">Retail &amp; Hospitality</span>
+            <span style="font-weight:400;font-size:14px;color:var(--color-gray);">Slips, violence prevention, young worker orientation.</span>
+          </a>
         </div>
       </div>
     </section>
@@ -212,10 +246,10 @@
       <div class="footer-col">
         <h3>Services</h3>
         <ul>
-          <li><a href="services/safety-plan-creation.html">Safety Plans</a></li>
-          <li><a href="services/compliance-consulting.html">Compliance Consulting</a></li>
-          <li><a href="services/risk-assessments.html">Risk Assessments</a></li>
-          <li><a href="services.html">Safety Training</a></li>
+          <li><a href="services/safety-plan-creation.html">Custom Safety Plans</a></li>
+          <li><a href="services/compliance-consulting.html">Compliance Reviews</a></li>
+          <li><a href="services/risk-assessments.html">Hazard &amp; Risk Assessments</a></li>
+          <li><a href="services.html">Manuals, Packages &amp; Training</a></li>
         </ul>
       </div>
       <div class="footer-col">
