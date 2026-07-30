@@ -355,6 +355,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 5px;
   padding: 10px 11px;
+  white-space: nowrap;
   font-family: var(--font-main);
   font-size: 15px;
   font-weight: 500;
@@ -584,7 +585,7 @@ textarea:focus-visible {
   max-width: 640px;
   margin-bottom: 38px;
 }
-.hero-content { max-width: 820px; }
+.hero-content { max-width: 880px; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 16px; }
 .hero .hero-buttons { flex-direction: row; }
 .hero-buttons .btn { flex: 0 1 auto; max-width: 100%; }
@@ -1326,6 +1327,132 @@ textarea:focus-visible {
 .industry-hero.manufacturing { background: linear-gradient(135deg, #334155, #1e293b); }
 .industry-hero.warehousing { background: linear-gradient(135deg, #0f766e, #115e59); }
 .industry-hero.healthcare { background: linear-gradient(135deg, #1d4ed8, #1e40af); }
+
+/* Real photography hero for industry/service pages */
+.industry-hero-img {
+  margin: 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-hover);
+}
+.industry-hero-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+}
+
+/* Card thumbnail images (industry/service cards) */
+.card-img {
+  margin: -40px -34px 24px;
+  overflow: hidden;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+.card-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.card:hover .card-img img { transform: scale(1.045); }
+.card > a.card-img-link { display: block; margin: -40px -34px 24px; overflow: hidden; border-radius: var(--radius-card) var(--radius-card) 0 0; }
+.card > a.card-img-link img {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.card:hover > a.card-img-link img { transform: scale(1.045); }
+
+/* Split media (image beside copy) */
+.split-media {
+  margin: 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-hover);
+  align-self: center;
+}
+.split-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Photo industry cards (hub + homepage) */
+.industry-card-v3 {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  color: var(--color-navy);
+  text-decoration: none;
+  transition: border-color var(--transition), transform var(--transition),
+              box-shadow var(--transition);
+}
+.industry-card-v3:hover {
+  border-color: var(--color-orange);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  color: var(--color-navy);
+}
+.industry-card-v3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.industry-card-v3:hover img { transform: scale(1.045); }
+.industry-card-v3 .industry-card-body {
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.industry-card-v3 .industry-card-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.002em;
+}
+.industry-card-v3 .industry-card-text {
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--color-gray);
+}
+.industry-card-v3 .industry-card-more {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  margin-top: 4px;
+}
+
+/* Wide two-column dropdown (Industries) */
+@media (min-width: 1100px) {
+  .dropdown-menu-wide {
+    min-width: 460px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .nav-item-dropdown:hover .dropdown-menu-wide,
+  .nav-item-dropdown:focus-within .dropdown-menu-wide,
+  .nav-item-dropdown.open .dropdown-menu-wide {
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown-menu-wide .dropdown-all {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--color-gray-light);
+    margin-bottom: 4px;
+  }
+  .dropdown-menu-wide .dropdown-all a { font-weight: 600; }
+}
 
 /* ---------- 22. Sidebar / CTA Panel ---------- */
 .sidebar-cta {

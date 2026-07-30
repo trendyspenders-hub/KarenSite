@@ -29,7 +29,19 @@ Construction, manufacturing, warehousing, healthcare, transportation & logistics
 - Manufacturing: https://www.alcantarasafety.com/industries/manufacturing.html
 - Warehousing: https://www.alcantarasafety.com/industries/warehousing.html
 - Healthcare: https://www.alcantarasafety.com/industries/healthcare.html
+- Transportation & Logistics: https://www.alcantarasafety.com/industries/transportation.html
+- Food Processing & Service: https://www.alcantarasafety.com/industries/food-processing.html
+- Oil & Gas: https://www.alcantarasafety.com/industries/oil-gas.html
+- Electrical Contractors: https://www.alcantarasafety.com/industries/electrical.html
+- Landscaping: https://www.alcantarasafety.com/industries/landscaping.html
+- Janitorial Services: https://www.alcantarasafety.com/industries/janitorial.html
+- Commercial Offices: https://www.alcantarasafety.com/industries/offices.html
+- Property Management: https://www.alcantarasafety.com/industries/property-management.html
+- Municipal Services: https://www.alcantarasafety.com/industries/municipal.html
+- Retail & Hospitality: https://www.alcantarasafety.com/industries/retail-hospitality.html
 - All industries: https://www.alcantarasafety.com/industries.html
+
+Each industry page covers that sector's top hazards, the regulations inspectors cite most (OSHA / WorkSafeBC / sector standards), how the firm helps, a case study, and industry-specific FAQs.
 
 ## Process (5 Steps)
 
