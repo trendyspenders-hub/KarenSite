@@ -1,19 +1,20 @@
 /* ==========================================================================
    Alcantara Safety Solutions — Global Stylesheet
-   Design system: Navy #1a2b4a / Orange #e85d04 / Steel Gray #6b7280
+   Design system: Deep Plum #372847 / Rose #c94068 / Steel Gray #6b7280
+   Warm, feminine-professional palette with WCAG AA contrast throughout.
    ========================================================================== */
 
 /* ---------- 1. CSS Custom Properties ---------- */
 :root {
-  --color-navy: #1a2b4a;
-  --color-navy-dark: #12203a;
-  --color-navy-light: #2a3f66;
-  --color-orange: #e85d04;
-  --color-orange-dark: #c74e03;
+  --color-navy: #372847;
+  --color-navy-dark: #281c36;
+  --color-navy-light: #4d3a61;
+  --color-orange: #c94068;
+  --color-orange-dark: #a83256;
   --color-gray: #6b7280;
   --color-gray-dark: #4b5563;
-  --color-gray-light: #e5e7eb;
-  --color-bg: #fafafa;
+  --color-gray-light: #e8e2ea;
+  --color-bg: #fdfafb;
   --color-white: #ffffff;
   --color-green: #16a34a;
   --color-green-dark: #15803d;
@@ -111,7 +112,7 @@ textarea:focus-visible {
 
 .section { padding: 72px 0; }
 .section-white { background: var(--color-white); }
-.section-gray { background: #f1f3f6; }
+.section-gray { background: #f6f1f5; }
 
 .section-header {
   text-align: center;
@@ -161,7 +162,7 @@ textarea:focus-visible {
 .btn-orange:hover {
   background: var(--color-orange-dark);
   color: var(--color-white);
-  box-shadow: 0 6px 16px rgba(232, 93, 4, 0.35);
+  box-shadow: 0 6px 16px rgba(201, 64, 104, 0.35);
 }
 
 .btn-navy {
@@ -171,7 +172,7 @@ textarea:focus-visible {
 .btn-navy:hover {
   background: var(--color-navy-dark);
   color: var(--color-white);
-  box-shadow: 0 6px 16px rgba(26, 43, 74, 0.35);
+  box-shadow: 0 6px 16px rgba(55, 40, 71, 0.35);
 }
 
 .btn-outline-white {
@@ -397,7 +398,7 @@ textarea:focus-visible {
 .hero h1 { color: var(--color-white); margin-bottom: 20px; }
 .hero .hero-sub {
   font-size: 20px;
-  color: #cbd5e1;
+  color: #ddd2e6;
   max-width: 680px;
   margin-bottom: 36px;
 }
@@ -414,7 +415,7 @@ textarea:focus-visible {
 .page-header h1 { color: var(--color-white); margin-bottom: 12px; }
 .page-header .page-desc {
   font-size: 20px;
-  color: #cbd5e1;
+  color: #ddd2e6;
   max-width: 720px;
   margin-bottom: 28px;
 }
@@ -423,7 +424,7 @@ textarea:focus-visible {
 /* Breadcrumbs */
 .breadcrumb {
   font-size: 14px;
-  color: #9fb0cc;
+  color: #c0aed0;
   margin-bottom: 20px;
 }
 .breadcrumb ol {
@@ -434,12 +435,12 @@ textarea:focus-visible {
   margin: 0;
   padding: 0;
 }
-.breadcrumb a { color: #cbd5e1; }
+.breadcrumb a { color: #ddd2e6; }
 .breadcrumb a:hover { color: var(--color-white); }
 .breadcrumb li + li::before {
   content: '/';
   margin-right: 6px;
-  color: #7d8fb3;
+  color: #a58fbb;
 }
 .breadcrumb [aria-current] { color: var(--color-white); }
 
@@ -552,13 +553,13 @@ textarea:focus-visible {
   width: 60px;
   height: 60px;
   border-radius: var(--radius-card);
-  background: rgba(232, 93, 4, 0.10);
+  background: rgba(201, 64, 104, 0.10);
   color: var(--color-orange);
   font-size: 30px;
   margin-bottom: 20px;
 }
 .card-icon.navy {
-  background: rgba(26, 43, 74, 0.08);
+  background: rgba(55, 40, 71, 0.08);
   color: var(--color-navy);
 }
 .card-icon.green {
@@ -710,7 +711,7 @@ textarea:focus-visible {
 /* ---------- 13. Footer ---------- */
 .site-footer {
   background: var(--color-navy);
-  color: #b6c2d8;
+  color: #c8badb;
   padding: 64px 0 0;
   font-size: 15px;
 }
@@ -731,7 +732,7 @@ textarea:focus-visible {
   padding: 0;
 }
 .footer-col li { margin-bottom: 10px; }
-.footer-col a { color: #b6c2d8; }
+.footer-col a { color: #c8badb; }
 .footer-col a:hover { color: var(--color-white); }
 .logo-footer { color: var(--color-white); margin-bottom: 14px; }
 .logo-footer:hover { color: var(--color-white); }
@@ -772,7 +773,7 @@ textarea:focus-visible {
   justify-content: space-between;
 }
 .footer-bottom p { margin: 0; }
-.footer-bottom a { color: #b6c2d8; text-decoration: underline; }
+.footer-bottom a { color: #c8badb; text-decoration: underline; }
 .footer-bottom a:hover { color: var(--color-white); }
 
 /* ---------- 14. Pills / Tags ---------- */
@@ -801,7 +802,7 @@ textarea:focus-visible {
 .tag {
   display: inline-block;
   padding: 4px 12px;
-  background: rgba(232, 93, 4, 0.10);
+  background: rgba(201, 64, 104, 0.10);
   color: var(--color-orange);
   border-radius: 999px;
   font-size: 13px;
@@ -809,7 +810,7 @@ textarea:focus-visible {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.tag.navy { background: rgba(26, 43, 74, 0.08); color: var(--color-navy); }
+.tag.navy { background: rgba(55, 40, 71, 0.08); color: var(--color-navy); }
 .tag.green { background: rgba(22, 163, 74, 0.10); color: var(--color-green); }
 
 /* ---------- 15. FAQ Accordion ---------- */
@@ -899,7 +900,7 @@ textarea:focus-visible {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-orange);
-  box-shadow: 0 0 0 3px rgba(232, 93, 4, 0.15);
+  box-shadow: 0 0 0 3px rgba(201, 64, 104, 0.15);
 }
 .form-group input.input-error,
 .form-group select.input-error,
@@ -964,7 +965,7 @@ textarea:focus-visible {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #9fb0cc;
+  color: #c0aed0;
   margin-bottom: 8px;
 }
 .estimate-box .estimate-value {
@@ -975,7 +976,7 @@ textarea:focus-visible {
 }
 .estimate-box .estimate-note {
   font-size: 14px;
-  color: #b6c2d8;
+  color: #c8badb;
   margin: 0;
 }
 
@@ -1015,9 +1016,9 @@ textarea:focus-visible {
   color: var(--color-white);
 }
 .lead-magnet h2, .lead-magnet h3 { color: var(--color-white); }
-.lead-magnet p { color: #cbd5e1; }
+.lead-magnet p { color: #ddd2e6; }
 .lead-magnet .form-group label { color: var(--color-white); }
-.lead-magnet .check-list li { color: #dbe4f2; }
+.lead-magnet .check-list li { color: #e4dcee; }
 
 /* ---------- 19. Case Studies ---------- */
 .case-card {
@@ -1065,8 +1066,8 @@ textarea:focus-visible {
 }
 .credentials-list li {
   padding: 8px 16px;
-  background: rgba(26, 43, 74, 0.06);
-  border: 1px solid rgba(26, 43, 74, 0.12);
+  background: rgba(55, 40, 71, 0.06);
+  border: 1px solid rgba(55, 40, 71, 0.12);
   color: var(--color-navy);
   border-radius: 999px;
   font-size: 14px;
@@ -1129,7 +1130,7 @@ textarea:focus-visible {
   text-align: center;
 }
 .sidebar-cta h3 { color: var(--color-white); }
-.sidebar-cta p { color: #cbd5e1; font-size: 16px; }
+.sidebar-cta p { color: #ddd2e6; font-size: 16px; }
 
 .two-col {
   display: grid;
@@ -1145,7 +1146,7 @@ textarea:focus-visible {
   justify-content: center;
   gap: 10px;
   min-height: 260px;
-  background: #eef1f5;
+  background: #f6f1f5;
   border: 1px dashed var(--color-gray-light);
   border-radius: var(--radius-card);
   color: var(--color-gray);
