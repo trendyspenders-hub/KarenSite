@@ -302,4 +302,47 @@
       counters.forEach(runCounter);
     }
   }
+
+  /* ---------- 11. Cookie / analytics consent banner ---------- */
+  (function () {
+    var KEY = 'asconsent';
+    var stored = null;
+    try { stored = localStorage.getItem(KEY); } catch (e) { return; }
+    if (stored) return; // choice already made
+
+    var banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-label', 'Cookie consent');
+    banner.innerHTML =
+      '<p>We use optional analytics cookies to understand how visitors use this site. ' +
+      'No advertising, no data sales. See our <a href="privacy-policy.html">Privacy Policy</a>.</p>' +
+      '<div class="cookie-actions">' +
+      '<button type="button" class="cookie-btn cookie-decline" id="cookie-decline">Decline</button>' +
+      '<button type="button" class="cookie-btn cookie-accept" id="cookie-accept">Accept</button>' +
+      '</div>';
+    document.body.appendChild(banner);
+
+    // Fix policy link for pages in subdirectories
+    var depth = window.location.pathname.split('/').filter(Boolean).length - 1;
+    if (depth > 0) {
+      var link = banner.querySelector('a');
+      link.setAttribute('href', Array(depth + 1).join('../') + 'privacy-policy.html');
+    }
+
+    requestAnimationFrame(function () {
+      setTimeout(function () { banner.classList.add('show'); }, 1200);
+    });
+
+    function choose(value) {
+      try { localStorage.setItem(KEY, value); } catch (e) {}
+      banner.classList.remove('show');
+      setTimeout(function () { banner.remove(); }, 600);
+      if (value === 'accepted' && typeof window.initAnalytics === 'function') {
+        window.initAnalytics(); // hook: define initAnalytics() to load your analytics after consent
+      }
+    }
+    banner.querySelector('#cookie-accept').addEventListener('click', function () { choose('accepted'); });
+    banner.querySelector('#cookie-decline').addEventListener('click', function () { choose('declined'); });
+  })();
 })();

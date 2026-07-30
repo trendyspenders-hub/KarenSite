@@ -19,4 +19,6 @@
   <url><loc>https://www.alcantarasafety.com/ask-an-expert.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alcantarasafety.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alcantarasafety.com/get-quote.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alcantarasafety.com/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.alcantarasafety.com/terms-of-service.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

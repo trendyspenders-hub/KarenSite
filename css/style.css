@@ -2056,3 +2056,62 @@ textarea:focus-visible {
 .tools-strip-item span strong { font-size: 15.5px; color: var(--color-navy); }
 .tools-strip-arrow { margin-left: auto; color: var(--color-orange-bright); font-size: 19px; flex-shrink: 0; }
 @media (max-width: 900px) { .tools-strip-inner { grid-template-columns: 1fr; } }
+
+
+/* ---------- Legal pages ---------- */
+.legal-body { max-width: 780px; }
+.legal-body h2 { font-size: 26px; margin-top: 40px; }
+.legal-body p, .legal-body li { color: var(--color-gray-dark); }
+.legal-body li { margin-bottom: 8px; }
+.legal-updated {
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  margin-bottom: 28px;
+}
+
+/* ---------- Cookie consent banner ---------- */
+.cookie-banner {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%);
+  bottom: 24px;
+  z-index: 2000;
+  width: min(680px, calc(100vw - 32px));
+  background: var(--color-navy-dark);
+  color: #dbe4ee;
+  border: 1px solid rgba(201, 164, 76, 0.35);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-premium);
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.cookie-banner.show { transform: translateX(-50%) translateY(0); }
+.cookie-banner p { margin: 0; font-size: 14.5px; line-height: 1.5; }
+.cookie-banner a { color: var(--color-orange-bright); text-decoration: underline; }
+.cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.cookie-btn {
+  font-family: var(--font-main);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px 18px;
+  border-radius: var(--radius-input);
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.cookie-accept { background: var(--color-orange); color: var(--color-white); }
+.cookie-accept:hover { background: var(--color-orange-dark); }
+.cookie-decline { background: transparent; color: #c9d6e4; border-color: rgba(201, 214, 228, 0.4); }
+.cookie-decline:hover { border-color: #c9d6e4; color: var(--color-white); }
+@media (max-width: 620px) {
+  .cookie-banner { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .cookie-actions { width: 100%; }
+  .cookie-btn { flex: 1; }
+}
