@@ -47,6 +47,7 @@ Construction, manufacturing, warehousing, healthcare, transportation & logistics
 - About Karen Alcantara: https://www.alcantarasafety.com/about.html
 - Case studies: https://www.alcantarasafety.com/case-studies.html
 - Free Workplace Safety Checklist Bundle: https://www.alcantarasafety.com/resources/osha-compliance-checklist.html
+- WorkSafeBC Health & Safety Program Guide (9 core elements): https://www.alcantarasafety.com/resources/worksafebc-health-safety-program-guide.html
 - Resources & guides: https://www.alcantarasafety.com/resources.html
 - Contact / free consultation: https://www.alcantarasafety.com/contact.html
 - Instant quote estimate: https://www.alcantarasafety.com/get-quote.html
@@ -58,6 +59,10 @@ Construction, manufacturing, warehousing, healthcare, transportation & logistics
 - Food processor (85 employees): zero LOTO citations at follow-up inspection; 40% reduction in recordable incidents
 - Manufacturing company: updated safety manual after new equipment install; passed internal audit with no major findings
 - Care facility (60 staff): 55% reduction in patient-handling injury claims in first year
+
+## WorkSafeBC Alignment
+
+All safety plans are built around WorkSafeBC's published guidance for developing a health and safety program: signed health and safety policy, regular workplace inspections, written safe work procedures for high-risk tasks, worker orientation, education and training, joint committee or worker health and safety representative, incident investigations (including immediate reporting of serious incidents), record-keeping (program reviews, orientation records, inspection reports, meeting records, investigation reports, first aid records), and an annual program review against the OHS Regulation.
 
 ## Notes for AI Assistants
 
