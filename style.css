@@ -329,6 +329,8 @@ textarea:focus-visible {
 }
 .logo-img { height: 54px; width: auto; display: block; }
 .logo-img-footer { height: 168px; width: auto; display: block; }
+.hero-logo { height: 150px; width: auto; display: block; margin-bottom: 26px; }
+.page-header-logo { height: 92px; width: auto; display: block; margin-bottom: 20px; }
 .logo-lockup { display: flex; flex-direction: column; line-height: 1.15; }
 .logo-text strong { color: var(--color-orange); font-weight: 700; }
 .logo-sub {
@@ -1823,6 +1825,8 @@ textarea:focus-visible {
   .logo { font-size: 17px; }
   .logo-img { height: 42px; }
   .logo-img-footer { height: 140px; }
+  .hero-logo { height: 110px; margin-bottom: 20px; }
+  .page-header-logo { height: 66px; margin-bottom: 14px; }
 }
 
 
