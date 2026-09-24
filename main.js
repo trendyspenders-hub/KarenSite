@@ -1,8 +1,8 @@
 /* ==========================================================================
    Alcantara Safety Solutions — main.js
-   1. Mobile menu toggle      4. FAQ accordion        7. Back-to-top button
-   2. Sticky header shadow    5. Quote calculator     8. Active nav highlight
-   3. Smooth anchor scroll    6. Form validation      9. Scroll fade-in
+   1. Mobile menu toggle      4. FAQ accordion        7. Active nav highlight
+   2. Sticky header shadow    5. Form validation      8. Scroll fade-in
+   3. Smooth anchor scroll    6. Back-to-top button   9. Cookie consent banner
    ========================================================================== */
 
 (function () {
@@ -93,64 +93,7 @@
     });
   });
 
-  /* ---------- 5. Quote calculator (get-quote.html) ---------- */
-  var estimateValue = document.getElementById('estimate-value');
-  if (estimateValue) {
-    var employeeBase = {
-      '1-10': 1500,
-      '11-50': 2800,
-      '51-200': 4500,
-      '201-500': 7000,
-      '500+': 9500
-    };
-    var serviceMultiplier = {
-      'safety-plan': 1.0,
-      'compliance-review': 0.75,
-      'risk-assessment': 0.6,
-      'training': 0.5,
-      'not-sure': 0.85
-    };
-    var urgencyMultiplier = {
-      'asap': 1.2,
-      '1-3-months': 1.0,
-      '3-6-months': 0.95,
-      'flexible': 0.9
-    };
-
-    function updateEstimate() {
-      var employeesEl = document.getElementById('quote-employees');
-      var serviceEl = document.getElementById('quote-service');
-      var timelineEl = document.getElementById('quote-timeline');
-      if (!employeesEl || !serviceEl) return;
-
-      var base = employeeBase[employeesEl.value];
-      var mult = serviceMultiplier[serviceEl.value];
-      var urgency = urgencyMultiplier[timelineEl ? timelineEl.value : 'flexible'] || 1;
-
-      if (!base || !mult) {
-        estimateValue.textContent = 'Select options above';
-        return;
-      }
-      var mid = base * mult * urgency;
-      var low = Math.round((mid * 0.75) / 100) * 100;
-      var high = Math.round((mid * 1.35) / 100) * 100;
-      estimateValue.textContent =
-        low.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) +
-        ' – ' +
-        high.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
-    }
-
-    ['quote-employees', 'quote-service', 'quote-timeline'].forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) el.addEventListener('change', updateEstimate);
-    });
-    document.querySelectorAll('input[name="compliance-status"]').forEach(function (radio) {
-      radio.addEventListener('change', updateEstimate);
-    });
-    updateEstimate();
-  }
-
-  /* ---------- 6. Form validation (required fields + email format) ---------- */
+  /* ---------- 5. Form validation (required fields + email format) ---------- */
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
   function validateField(field) {
@@ -215,7 +158,7 @@
     });
   });
 
-  /* ---------- 7. Back-to-top button (appears after 500px) ---------- */
+  /* ---------- 6. Back-to-top button (appears after 500px) ---------- */
   var backToTop = document.getElementById('backToTop');
   if (backToTop) {
     window.addEventListener('scroll', function () {
@@ -226,7 +169,7 @@
     });
   }
 
-  /* ---------- 8. Active nav highlighting ---------- */
+  /* ---------- 7. Active nav highlighting ---------- */
   var path = window.location.pathname;
   var currentPage = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
 
@@ -254,7 +197,7 @@
     });
   }
 
-  /* ---------- 9. Fade-in animation on scroll (IntersectionObserver) ---------- */
+  /* ---------- 8. Fade-in animation on scroll (IntersectionObserver) ---------- */
   var fadeEls = document.querySelectorAll('.fade-in');
   if (fadeEls.length && 'IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
@@ -270,7 +213,7 @@
     fadeEls.forEach(function (el) { el.classList.add('visible'); });
   }
 
-  /* ---------- 10. Animated stat counters ---------- */
+  /* ---------- 9. Animated stat counters ---------- */
   var counters = document.querySelectorAll('[data-count]');
   if (counters.length) {
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -303,7 +246,7 @@
     }
   }
 
-  /* ---------- 11. Cookie / analytics consent banner ---------- */
+  /* ---------- 10. Cookie / analytics consent banner ---------- */
   (function () {
     var KEY = 'asconsent';
     var stored = null;

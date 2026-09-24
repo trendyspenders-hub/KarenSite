@@ -1,10 +1,10 @@
 # Alcantara Safety Solutions
 
-> Alcantara Safety Solutions is a safety plan coordination practice founded and led by Karen Alcantara, a certified safety plan coordinator. The company designs custom workplace safety plans, safe work procedures, hazard and risk assessments, safety manuals, orientation packages, and contractor safety packages — and runs compliance reviews against WorkSafeBC and other provincial OHS regulations for businesses across British Columbia, with capacity to support operations extending into neighbouring provinces like Alberta. Positioning: helps companies win contracts, pass inspections, reduce liability, and protect their people.
+> Alcantara Safety Solutions is a BC-based safety plan coordination practice led by certified safety plan coordinators. The company designs custom workplace safety plans, safe work procedures, hazard and risk assessments, safety manuals, orientation packages, and contractor safety packages — and runs compliance reviews against WorkSafeBC and other provincial OHS regulations for businesses across British Columbia, with capacity to support operations extending into neighbouring provinces like Alberta. Positioning: helps companies win contracts, pass inspections, reduce liability, and protect their people.
 
 ## Company Facts
 
-- Founder: Karen Alcantara, certified safety plan coordinator (12+ years of experience, 500+ custom safety plans delivered)
+- Team: certified safety plan coordinators (12+ years of experience, 500+ custom safety plans delivered)
 - Location: Vancouver, BC, Canada — based in British Columbia, serving contractors across the province
 - Contact: (778) 954-1988, karen@alcantarasafety.com, Monday–Friday 8:00am–6:00pm (typical response within one business day)
 - Credentials: WorkSafeBC Certificate of Recognition (COR) qualified, NHSA certified, WorkSafeBC & provincial OHS program specialist, fully insured
@@ -49,23 +49,23 @@ Each industry page covers that sector's top hazards, the regulations inspectors 
 - Homepage: https://www.alcantarasafety.com/
 - Services: https://www.alcantarasafety.com/services.html
 - Industries: https://www.alcantarasafety.com/industries.html
-- About Karen Alcantara: https://www.alcantarasafety.com/about.html
+- About us: https://www.alcantarasafety.com/about.html
 - Case studies: https://www.alcantarasafety.com/case-studies.html
 - [FAQ](https://www.alcantarasafety.com/faq.html): services, pricing, timelines, coverage questions answered
 - [Service Areas](https://www.alcantarasafety.com/service-areas.html): British Columbia communities served — Lower Mainland, Vancouver Island, Interior & North
 - [Vancouver](https://www.alcantarasafety.com/vancouver.html): Safety plans for Vancouver employers — construction, film, port logistics, hospitality, offices
-- [Burnaby](https://www.alcantarasafety.com/burnaby.html): Safety plans for Burnaby — Big Bend food production, light industrial, high-rise construction
-- [Surrey](https://www.alcantarasafety.com/surrey.html): Safety plans for Surrey — construction, trucking & logistics, manufacturing, agri-food, COR readiness
-- [Richmond](https://www.alcantarasafety.com/richmond.html): Safety plans for Richmond — food processing, YVR logistics, warehousing, manufacturing
+- [Burnaby](https://www.alcantarasafety.com/burnaby.html): Safety plans for Burnaby — Big Bend manufacturing, light industrial, high-rise construction
+- [Surrey](https://www.alcantarasafety.com/surrey.html): Safety plans for Surrey — construction, trucking & logistics, manufacturing, COR readiness
+- [Richmond](https://www.alcantarasafety.com/richmond.html): Safety plans for Richmond — YVR logistics, warehousing, manufacturing, port operations
 - [Coquitlam](https://www.alcantarasafety.com/coquitlam.html): Safety plans for Coquitlam & Tri-Cities — construction, trades, municipal, cleantech
 - [Langley](https://www.alcantarasafety.com/langley.html): Safety plans for Langley — manufacturing, Hwy 1 distribution, agriculture & equine
-- [Abbotsford](https://www.alcantarasafety.com/abbotsford.html): Safety plans for Abbotsford — agriculture, food processing, trucking, construction
+- [Abbotsford](https://www.alcantarasafety.com/abbotsford.html): Safety plans for Abbotsford — agriculture, trucking, construction, light industrial
 - [North & West Vancouver](https://www.alcantarasafety.com/north-vancouver.html): Safety plans for the North Shore — marine & shipbuilding, film, steep-slope construction
 - [Victoria](https://www.alcantarasafety.com/victoria.html): Safety plans for Victoria — hospitality, healthcare, marine, government contractors, heritage renovation
 - [Nanaimo](https://www.alcantarasafety.com/nanaimo.html): Safety plans for Nanaimo — healthcare, construction, retail, marine & port
-- [Courtenay & Comox Valley](https://www.alcantarasafety.com/courtenay.html): Safety plans for the Comox Valley — construction, aquaculture, food & beverage, tourism
+- [Courtenay & Comox Valley](https://www.alcantarasafety.com/courtenay.html): Safety plans for the Comox Valley — construction, aquaculture, tourism, 19 Wing contractors
 - [Campbell River](https://www.alcantarasafety.com/campbell-river.html): Safety plans for Campbell River — aquaculture, forestry, construction, tourism
-- [Kelowna](https://www.alcantarasafety.com/kelowna.html): Safety plans for Kelowna — construction, wineries, agriculture, hospitality (remote-first)
+- [Kelowna](https://www.alcantarasafety.com/kelowna.html): Safety plans for Kelowna — construction, agriculture, manufacturing, hospitality (remote-first)
 - [Kamloops](https://www.alcantarasafety.com/kamloops.html): Safety plans for Kamloops — trucking & logistics, mining services, construction, healthcare (remote-first)
 - [Prince George](https://www.alcantarasafety.com/prince-george.html): Safety plans for Prince George — forestry, trucking, oil & gas services (remote-first)
 - [Fort St. John](https://www.alcantarasafety.com/fort-st-john.html): Safety plans for Fort St. John & Peace Region — oil & gas contractors, energy services (remote-first)
@@ -75,7 +75,7 @@ Each industry page covers that sector's top hazards, the regulations inspectors 
 
 - Construction company: complete safety program delivered in 5 business days for a municipal bid — documentation accepted, contract won
 - Construction client (50 employees): passed prime contractor re-audit with zero deficiencies; regained two GC bid lists within 60 days
-- Food processor (85 employees): zero LOTO citations at follow-up inspection; 40% reduction in recordable incidents
+- Manufacturer (85 employees): zero LOTO citations at follow-up inspection; 40% reduction in recordable incidents
 - Manufacturing company: updated safety manual after new equipment install; passed internal audit with no major findings
 - Care facility (60 staff): 55% reduction in patient-handling injury claims in first year
 
