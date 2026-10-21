@@ -2643,3 +2643,8 @@ textarea:focus-visible {
 .steps-list .step span { font-size: 0.95rem; color: var(--color-gray); line-height: 1.5; }
 .steps-2col { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
 @media (max-width: 720px) { .steps-2col { grid-template-columns: 1fr; } }
+
+/* Single-column founder grid (no photo) */
+@media (min-width: 768px) {
+  .founder-grid-single { grid-template-columns: 1fr; max-width: 760px; }
+}
