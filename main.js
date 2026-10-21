@@ -120,6 +120,39 @@
   }
 
   document.querySelectorAll('form.validate').forEach(function (form) {
+    // Mailto forms: build email from fields and open client
+    if (form.getAttribute('data-mailto') === 'true') {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var allValid = true;
+        var firstInvalid = null;
+        var fields = form.querySelectorAll('input[required], select[required], textarea[required], input[type="email"]');
+        fields.forEach(function (field) {
+          if (!validateField(field)) {
+            allValid = false;
+            if (!firstInvalid) firstInvalid = field;
+          }
+        });
+        if (!allValid) {
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        var to = form.getAttribute('data-mailto-address') || 'karen@alcantarasafety.com';
+        var subject = encodeURIComponent(form.querySelector('[name="subject"]').value || 'Safety Plan Inquiry');
+        var bodyParts = [];
+        form.querySelectorAll('[name]').forEach(function (f) {
+          if (f.name === 'subject') return;
+          if (!f.value.trim()) return;
+          var label = f.closest('.form-group') ? form.querySelector('label[for="' + f.id + '"]') : null;
+          var labelText = label ? label.textContent.replace('*','').trim() : f.name;
+          bodyParts.push(labelText + ': ' + f.value.trim());
+        });
+        var body = encodeURIComponent(bodyParts.join('\n'));
+        window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+      });
+      return;
+    }
+
     var fields = form.querySelectorAll('input[required], select[required], textarea[required], input[type="email"]');
 
     fields.forEach(function (field) {

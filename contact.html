@@ -138,12 +138,12 @@
           </div>
         </div>
 
-        <!-- Right: form -->
+        <!-- Right: form (mailto-based, opens email client) -->
         <div class="form-card fade-in">
           <h2 style="font-size:26px;">Send Us a Message</h2>
-          <p style="font-size:16px;">Fields marked <span class="required">*</span> are required.</p>
-          <form id="contact-form" class="validate" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-          <input type="hidden" name="_next" value="https://www.alcantarasafety.com/thank-you.html">
+          <p style="font-size:16px;">Fill out the form below and click send – your email client will open with everything pre-filled. Or reach us directly at <a href="tel:+17789541988" style="color:var(--color-orange);font-weight:600;">(778) 954-1988</a>.</p>
+          <form id="contact-form" class="validate" data-mailto="true" data-mailto-address="karen@alcantarasafety.com" novalidate>
+            <input type="hidden" name="subject" value="Safety Plan Inquiry - asafetysolutions.com">
             <div class="form-row">
               <div class="form-group">
                 <label for="c-name">Full Name <span class="required" aria-hidden="true">*</span></label>
@@ -216,7 +216,8 @@
               <label for="c-referral">How did you hear about us? <span class="form-hint" style="display:inline;">(optional)</span></label>
               <input type="text" id="c-referral" name="referral">
             </div>
-            <button type="submit" class="btn btn-orange btn-block btn-lg">Send Message</button>
+            <button type="submit" class="btn btn-orange btn-block btn-lg"><i class="ph ph-envelope-simple" aria-hidden="true"></i> Send via Email</button>
+            <p style="font-size:13px;color:var(--color-muted);margin-top:10px;text-align:center;"><i class="ph ph-info" aria-hidden="true"></i> This opens your email client with the message pre-filled. No data is stored on this site.</p>
           </form>
         </div>
       </div>
