@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Signups | Alcantara Safety Solutions</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#121A24; color:#E8E4DC; min-height:100vh; padding:40px 20px; }
+    .wrap { max-width:900px; margin:0 auto; }
+    h1 { font-size:26px; margin-bottom:6px; color:#fff; }
+    .sub { color:#879B86; margin-bottom:28px; font-size:14px; }
+    .card { background:#1B2532; border-radius:12px; padding:24px; margin-bottom:20px; border:1px solid #283A50; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th { text-align:left; padding:10px 12px; color:#879B86; font-size:12px; text-transform:uppercase; letter-spacing:.05em; border-bottom:1px solid #283A50; }
+    td { padding:12px; border-bottom:1px solid #222e3d; color:#E8E4DC; }
+    tr:last-child td { border-bottom:none; }
+    .empty { text-align:center; padding:40px; color:#6b7a8a; }
+    .btn { display:inline-flex; align-items:center; gap:8px; background:#5D705C; color:#fff; border:none; padding:12px 20px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; text-decoration:none; margin-right:10px; }
+    .btn:hover { background:#879B86; }
+    .btn-outline { background:transparent; border:1px solid #283A50; }
+    .count { font-size:13px; color:#879B86; margin-bottom:12px; }
+    .note { font-size:12px; color:#6b7a8a; margin-top:16px; line-height:1.6; }
+    .warn { background:rgba(214,167,84,.1); border:1px solid rgba(214,167,84,.35); color:#e8c98a; padding:14px 16px; border-radius:8px; font-size:13px; margin-bottom:20px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Download Signups</h1>
+    <p class="sub">Emails captured from the free checklist download on asafetysolutions.com</p>
+
+    <div class="warn">
+      <strong>How retrieval works:</strong> Every signup also triggers an email to <strong>karen@alcantarasafety.com</strong>. Search your inbox for <strong>"[Download Signup]"</strong> to retrieve leads. This page shows signups stored in your browser and lets you export them as CSV.
+    </div>
+
+    <div class="card">
+      <div class="count" id="count">Loading…</div>
+      <div id="table-wrap"></div>
+    </div>
+
+    <div class="card" style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn" id="btn-csv" href="#">Download CSV</a>
+      <button class="btn btn-outline" id="btn-clear" style="color:#E8E4DC;">Clear Stored Signups</button>
+    </div>
+
+    <p class="note">
+      Signups are stored in this browser's local storage. To collect signups from all visitors in one place, check karen@alcantarasafety.com and filter by subject "[Download Signup]". Each email contains the lead's name, email, and signup date.
+    </p>
+  </div>
+
+  <script>
+    var KEY = 'asafety_leads';
+    function load() {
+      try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch(e) { return []; }
+    }
+    function esc(s) { var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+    function render() {
+      var leads = load().slice().reverse(); // newest first
+      document.getElementById('count').textContent = leads.length + ' signup' + (leads.length===1?'':'s') + ' stored in this browser';
+      var wrap = document.getElementById('table-wrap');
+      if (!leads.length) {
+        wrap.innerHTML = '<div class="empty">No signups yet.<br>Submit the download form on the homepage to test.</div>';
+        return;
+      }
+      var html = '<table><thead><tr><th>Name</th><th>Email</th><th>Date</th><th>Source</th></tr></thead><tbody>';
+      leads.forEach(function(l) {
+        html += '<tr><td>'+esc(l.name||'')+'</td><td><a href="mailto:'+esc(l.email||'')+'" style="color:#879B86;">'+esc(l.email||'')+'</a></td><td>'+esc((l.date||'').replace('T',' ').slice(0,19))+'</td><td>'+esc(l.source||'')+'</td></tr>';
+      });
+      html += '</tbody></table>';
+      wrap.innerHTML = html;
+    }
+    function toCSV() {
+      var leads = load();
+      var rows = [['Name','Email','Date','Page','Source']];
+      leads.forEach(function(l){ rows.push([l.name||'',l.email||'',l.date||'',l.page||'',l.source||'']); });
+      return rows.map(function(r){ return r.map(function(c){ return '"'+String(c).replace(/"/g,'""')+'"'; }).join(','); }).join('\n');
+    }
+    document.getElementById('btn-csv').addEventListener('click', function(e){
+      e.preventDefault();
+      var blob = new Blob([toCSV()], {type:'text/csv'});
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'download-signups.csv';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    document.getElementById('btn-clear').addEventListener('click', function(){
+      if (confirm('Delete all stored signups from this browser?')) { localStorage.removeItem(KEY); render(); }
+    });
+    render();
+  </script>
+</body>
+</html>

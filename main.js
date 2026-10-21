@@ -120,6 +120,60 @@
   }
 
   document.querySelectorAll('form.validate').forEach(function (form) {
+    // Download forms: capture email, save locally, and send to team inbox
+    if (form.getAttribute('data-download') === 'true') {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var allValid = true;
+        var firstInvalid = null;
+        var fields = form.querySelectorAll('input[required], select[required], textarea[required], input[type="email"]');
+        fields.forEach(function (field) {
+          if (!validateField(field)) {
+            allValid = false;
+            if (!firstInvalid) firstInvalid = field;
+          }
+        });
+        if (!allValid) {
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+
+        var name = (form.querySelector('[name="name"]') || {}).value || '';
+        var email = (form.querySelector('[name="email"]') || {}).value || '';
+        var now = new Date().toISOString();
+        var page = window.location.href;
+
+        // Save to browser localStorage (retrievable via console or export tool)
+        try {
+          var leads = JSON.parse(localStorage.getItem('asafety_leads') || '[]');
+          leads.push({ name: name, email: email, date: now, page: page, source: 'free-download' });
+          localStorage.setItem('asafety_leads', JSON.stringify(leads));
+        } catch (err) {}
+
+        // Send to team inbox so every signup is retrievable by email
+        var to = 'karen@alcantarasafety.com';
+        var subject = encodeURIComponent('[Download Signup] ' + name);
+        var body = encodeURIComponent(
+          'New free-download signup from asafetysolutions.com\n\n' +
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          'Date: ' + now + '\n' +
+          'Page: ' + page + '\n\n' +
+          'Reply directly to this email to follow up with the lead.'
+        );
+        window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+
+        // Show success + reveal download
+        var success = form.querySelector('.form-success');
+        if (success) success.classList.add('show');
+        var delivery = document.getElementById('download-delivery');
+        if (delivery) delivery.style.display = 'block';
+        form.reset();
+        if (delivery) delivery.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+      return;
+    }
+
     // Mailto forms: build email from fields and open client
     if (form.getAttribute('data-mailto') === 'true') {
       form.addEventListener('submit', function (e) {
