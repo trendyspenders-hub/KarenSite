@@ -1559,6 +1559,7 @@ textarea:focus-visible {
 
 /* Card thumbnail images (industry/service cards) */
 .card-img {
+  display: block;
   margin: -40px -34px 24px;
   overflow: hidden;
   border-radius: var(--radius-card) var(--radius-card) 0 0;
