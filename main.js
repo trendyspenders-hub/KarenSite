@@ -30,6 +30,23 @@
     });
   }
 
+  // Escape closes the mobile menu and any open dropdowns
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (mainNav && mainNav.classList.contains('open')) {
+      mainNav.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open menu');
+      hamburger.focus();
+    }
+    document.querySelectorAll('.nav-item-dropdown.open').forEach(function (item) {
+      item.classList.remove('open');
+      var t = item.querySelector('.dropdown-toggle');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+  });
+
   /* Dropdown toggles (click on mobile / keyboard everywhere) */
   document.querySelectorAll('.dropdown-toggle').forEach(function (toggle) {
     toggle.addEventListener('click', function (e) {
