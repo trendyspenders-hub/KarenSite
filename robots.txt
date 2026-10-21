@@ -1,4 +1,27 @@
+# Alcantara Safety Solutions — https://asafetysolutions.com
+# Crawler policy reviewed 2026-10-21.
+
+# Default: all crawlers (including search and AI search crawlers) may crawl public pages.
 User-agent: *
 Allow: /
+
+# --- AI search / answer-engine crawlers: explicitly allowed ---
+# These surface public pages in AI search answers. Each has its own named group
+# (per RFC 9309 a named group overrides the wildcard for that crawler only);
+# access is identical to the default above.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# --- Model-training crawlers ---
+# GPTBot (OpenAI), ClaudeBot (Anthropic), Google-Extended (Google),
+# Applebot-Extended (Apple) currently fall under the wildcard = allowed.
+# Changing TRAINING permissions requires separate owner authorization;
+# do not add named groups for them without it.
 
 Sitemap: https://asafetysolutions.com/sitemap.xml
