@@ -392,4 +392,41 @@
     banner.querySelector('#cookie-accept').addEventListener('click', function () { choose('accepted'); });
     banner.querySelector('#cookie-decline').addEventListener('click', function () { choose('declined'); });
   })();
+
+
+  /* ---------- 10. "Not sure what you need?" chooser (fully client-side) ---------- */
+  var guideBox = document.getElementById('guide-box');
+  if (guideBox) {
+    var steps = guideBox.querySelectorAll('.guide-step');
+    var results = guideBox.querySelectorAll('.guide-result');
+    var resultFor = { '4': 'plan', '5': 'urgent', '7': 'ongoing', '8': 'assessment', '9': 'urgent', '10': 'review' };
+
+    function guideShowStep(n) {
+      steps.forEach(function (st) { st.hidden = st.getAttribute('data-step') !== String(n); });
+      results.forEach(function (r) { r.style.display = 'none'; });
+    }
+    function guideShowResult(key) {
+      steps.forEach(function (st) { st.hidden = true; });
+      results.forEach(function (r) {
+        r.style.display = r.getAttribute('data-result') === key ? 'block' : 'none';
+      });
+    }
+    guideBox.addEventListener('click', function (e) {
+      var btn = e.target.closest('.guide-opt');
+      if (!btn) return;
+      var go = btn.getAttribute('data-go');
+      if (resultFor[go]) { guideShowResult(resultFor[go]); }
+      else { guideShowStep(go); }
+    });
+    // add a restart link to each result
+    results.forEach(function (r) {
+      var rb = document.createElement('button');
+      rb.type = 'button';
+      rb.className = 'guide-restart';
+      rb.textContent = 'Start over';
+      rb.addEventListener('click', function () { guideShowStep(0); });
+      r.appendChild(rb);
+    });
+  }
+
 })();
