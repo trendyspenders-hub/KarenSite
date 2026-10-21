@@ -2627,3 +2627,19 @@ textarea:focus-visible {
 }
 .deadline-box h3 { font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
 .deadline-box p { font-size: 14.5px; margin-bottom: 6px; }
+
+/* ---------- Steps list: shared base + two-column variant ---------- */
+.steps-list { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+.steps-list .step { counter-increment: step; position: relative; padding: 4px 0 4px 46px; margin-bottom: 22px; }
+.steps-list .step::before {
+  content: counter(step);
+  position: absolute; top: 0; left: 0;
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--color-green); color: #fff;
+  font-size: 13px; font-weight: 700; border-radius: 50%;
+}
+.steps-list .step h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.steps-list .step span { font-size: 0.95rem; color: var(--color-gray); line-height: 1.5; }
+.steps-2col { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+@media (max-width: 720px) { .steps-2col { grid-template-columns: 1fr; } }
