@@ -25,7 +25,7 @@ The Google Maps embed on the website stays removed, per your earlier instruction
 
 ## 4. Hours and contact details (must match the website exactly)
 
-- [ ] Phone: (778) 954-1988 — identical format to the site.
+- [ ] Phone: (778) 984-1988 — identical format to the site.
 - [ ] Website: https://asafetysolutions.com
 - [ ] Hours: enter real working hours. If hours vary, leave them unset rather than guessing. The site's schema currently says Mo–Fr 08:00–18:00 — update whichever one is wrong so they match.
 - [ ] Holiday hours: update when applicable; wrong holiday hours generate disproportionate negative reviews.

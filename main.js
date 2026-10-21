@@ -168,7 +168,7 @@
         } catch (err) {}
 
         // Send to team inbox so every signup is retrievable by email
-        var to = 'karen@alcantarasafety.com';
+        var to = 'karen@asafetysolutions.com';
         var subject = encodeURIComponent('[Download Signup] ' + name);
         var body = encodeURIComponent(
           'New free-download signup from asafetysolutions.com\n\n' +
@@ -208,7 +208,7 @@
           if (firstInvalid) firstInvalid.focus();
           return;
         }
-        var to = form.getAttribute('data-mailto-address') || 'karen@alcantarasafety.com';
+        var to = form.getAttribute('data-mailto-address') || 'karen@asafetysolutions.com';
         var subject = encodeURIComponent(form.querySelector('[name="subject"]').value || 'Safety Plan Inquiry');
         var bodyParts = [];
         form.querySelectorAll('[name]').forEach(function (f) {
