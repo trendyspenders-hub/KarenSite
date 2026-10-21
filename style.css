@@ -1390,6 +1390,11 @@ textarea:focus-visible {
 }
 
 /* ---------- 18. Blog / Resource Cards ---------- */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
 .post-card {
   display: flex;
   flex-direction: column;
@@ -1401,39 +1406,46 @@ textarea:focus-visible {
 }
 .post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 .post-card-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 160px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 48px;
+  display: block;
+  height: 180px;
+  overflow: hidden;
+  background: var(--tint-warm);
 }
 .post-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform var(--transition);
 }
-.post-card-body { padding: 26px; display: flex; flex-direction: column; flex-grow: 1; }
-.post-card-body h3 { font-size: 20px; margin: 10px 0 8px; }
-.post-card-body p { font-size: 15px; flex-grow: 1; }
+.post-card:hover .post-card-image img { transform: scale(1.035); }
+.post-card-body { padding: 24px 26px 28px; display: flex; flex-direction: column; flex-grow: 1; }
+.post-card-body h2 { font-family: var(--font-display); font-size: 21px; line-height: 1.28; margin: 0 0 10px; }
+.post-card-body h2 a { color: var(--color-navy); }
+.post-card-body h2 a:hover { color: var(--color-orange-dark); }
+.post-card-body p { font-size: 15px; flex-grow: 1; margin-bottom: 0; }
 .post-meta { font-size: 13px; color: var(--color-gray); }
-
-/* Lead magnet box */
-.lead-magnet {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 36px;
-  background: var(--color-navy);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50V16l28-16 28 16v34L28 66zm0 34l28-16V50L28 66 0 50v34l28 16z' fill='none' stroke='%23ffffff' stroke-opacity='0.06'/%3E%3C/svg%3E");
+.article-hero-image {
+  margin: 0 0 36px;
   border-radius: var(--radius-card);
-  padding: 48px;
-  color: var(--color-white);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: var(--tint-warm);
 }
-.lead-magnet h2, .lead-magnet h3 { color: var(--color-white); }
-.lead-magnet p { color: #D5DDD4; }
-.lead-magnet .form-group label { color: var(--color-white); }
-.lead-magnet .check-list li { color: #DFE5DD; }
+.article-hero-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 980px) {
+  .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .post-grid { grid-template-columns: 1fr; }
+  .post-card-image { height: 210px; }
+  .article-hero-image { margin-bottom: 28px; }
+}
 
 /* ---------- 19. Case Studies ---------- */
 .case-card {
