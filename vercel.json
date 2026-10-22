@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    { "source": "/admin", "destination": "https://lt4bgzvqs5jwu.kimi.pro/admin" },
+    { "source": "/admin/:path*", "destination": "https://lt4bgzvqs5jwu.kimi.pro/admin/:path*" },
+    { "source": "/api/:path*", "destination": "https://lt4bgzvqs5jwu.kimi.pro/api/:path*" },
+    { "source": "/assets/:path*", "destination": "https://lt4bgzvqs5jwu.kimi.pro/assets/:path*" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
